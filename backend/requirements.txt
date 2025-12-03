@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+httpx
+beautifulsoup4
+sqlalchemy
+asyncpg
+psycopg2-binary
+alembic
+
+pydantic
+pydantic-settings
+
+sentence-transformers
+numpy
+python-dotenv
+openai
+pgvector
