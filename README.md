@@ -6,8 +6,8 @@ A mini AI-powered **product discovery assistant** built to recommend products fr
 ---
 
 ## 🚀 **Live Demo**
-🌐 **Deployed Application:** [Live Project Link](#)  
-🎥 **Demo Video:** [Loom Video Link](#)  
+
+🎥 **Demo Video:** [https://www.loom.com/share/c909385c45de4211a71d1bbed566de94](#)  
 
 ---
 
@@ -93,10 +93,11 @@ This project covers **end-to-end system development**, including:
 
 ## 📝 **Installation & Local Setup**
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/Neusearch-AI.git
 cd Neusearch-AI
+```
 
 ```bash
 cd backend
@@ -104,8 +105,9 @@ python -m venv venv
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
 pip install -r requirements.txt
+```
 
-### 3️⃣ Database Setup
+### 2 Database Setup
 
 Install PostgreSQL
 
@@ -116,18 +118,19 @@ Update .env with database credentials:
 DATABASE_URL=postgresql://user:password@localhost:5432/products_db
 OPENAI_API_KEY=your_openai_api_key
 
-### 4️⃣ Run Backend
+### 3 Run Backend
 
 ```bash
 uvicorn main:app --reload
+```
 
-### 5️⃣ Frontend Setup
+### 4 Frontend Setup
 
 ```bash
 cd ../frontend
 npm install
 npm start
-
+```
 ### 💡 Architecture & Decisions
 
 Scraping: Selenium + BeautifulSoup for reliable DOM navigation.
@@ -149,3 +152,4 @@ Limited data (25+ products) → vector retrieval tested with small dataset; prod
 Chatbot latency → embedding size vs speed trade-off.
 
 Abstract query interpretation → prompts optimized
+
